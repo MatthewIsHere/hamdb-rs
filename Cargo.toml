@@ -1,7 +1,13 @@
 [package]
 name = "hamdb"
-version = "0.1.0"
-edition = "2024"
+version = "0.0.0"
+edition = "2021"
+
+license = "MIT"
+authors = ["Matthew Lyon <matthew@lyon.systems>"]
+description = "An API library for HamDB callsign lookups"
+homepage = "https://github.com/MatthewIsHere/hamdb-rs"
+repository = "https://github.com/MatthewIsHere/hamdb-rs"
 
 [dependencies]
 reqwest = { version = "^0.12", features = ["json"] }

@@ -1,7 +1,9 @@
 use serde::{Deserialize, Deserializer};
-use time::{Date, macros::format_description};
+use time::{macros::format_description, Date};
 
-pub(crate) fn empty_as_none<'de, D: Deserializer<'de>>(deserializer: D) -> Result<Option<String>, D::Error> {
+pub(crate) fn empty_as_none<'de, D: Deserializer<'de>>(
+    deserializer: D,
+) -> Result<Option<String>, D::Error> {
     let s = String::deserialize(deserializer)?;
     if s.is_empty() {
         Ok(None)

@@ -234,7 +234,7 @@ dependencies = [
 
 [[package]]
 name = "hamdb"
-version = "0.0.0"
+version = "0.1.0"
 dependencies = [
  "reqwest",
  "serde",
